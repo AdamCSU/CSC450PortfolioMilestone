@@ -26,4 +26,17 @@ void countingDown() {  //Function for counting down from 20 to 0
 }
 
 int main() {
+
+	string intro = "Let the counting begin ";  //Intro message
+
+	cout << intro << endl;
+
+	thread thread1(countingUp);  //Create first thread for counting up
+
+	thread1.join();  //Wait until thread1 finishes before continuing
+
+	cout << "Counting down " << endl;
+
+
+	return 0;
 }
