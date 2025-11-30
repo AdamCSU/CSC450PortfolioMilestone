@@ -14,14 +14,14 @@ using namespace std;
 void countingUp() {  //Function for counting up from 1 to 20
 	for (int i = 1; i <= 20; i++) {
 		cout << "Counting up: " << i << endl;
-		this_thread::sleep_for(chrono::milliseconds(150));
+		this_thread::sleep_for(chrono::milliseconds(175));
 	}
 }
 
 void countingDown() {  //Function for counting down from 20 to 0
 	for (int i = 20; i >= 0; i--) {
 		cout << "Counting down: " << i << endl;
-		this_thread::sleep_for(chrono::milliseconds(150));
+		this_thread::sleep_for(chrono::milliseconds(175));
 	}
 }
 
